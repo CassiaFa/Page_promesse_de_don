@@ -9,8 +9,8 @@ Votre client est une association caritative qui veut récolter des dons sur le w
 
 En solo, vous devez créer deux page web en utilisant PYTHON, HTML/CSS (BOOTSTRAP est autorisé) :
 
-    - Une page d'accueil qui présente l'association et la bonne cause à financer,
-    - Un formulaire qui permet de faire une promesse de don (avec saisie du nom, prénom, adresse, mail, somme promise, une coche 'vous avez pris connaissance..',...).
+- Une page d'accueil qui présente l'association et la bonne cause à financer,
+- Un formulaire qui permet de faire une promesse de don (avec saisie du nom, prénom, adresse, mail, somme promise, une coche 'vous avez pris connaissance..',...).
 
 La navigation entre les 2 pages doit être simple et intuitive. L'architecture du site doit être propre.
 
