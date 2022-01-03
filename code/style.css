@@ -1,0 +1,61 @@
+body {
+    background: url("https://woody.cloudly.space/app/uploads/crt-reunion/2020/04/thumbs/cetaces05baleines-creditirt-ericlamblindts082015-1920x1280.jpg") no-repeat center center fixed;
+}
+
+header.page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    min-width: 100%;
+}
+
+header.page-header > h1 {
+    text-align: center;
+    color: white;
+    font: italic bold 80px "Dancing Script", cursive;
+    width: 100%;
+}
+
+#menu {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.menu_item {
+    margin-left: 2px;
+    float: left;
+}
+
+.bouton_menu {
+    display:block;
+    float:left;   
+    width:150px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    text-align:center;
+    padding: 10px;
+}
+
+.bouton_don {
+    margin-top: 30px;
+    border-radius: 15px;
+    background: deeppink;
+    
+}
+
+.bouton_don::before {
+    content: "♥";
+  }
+
+.formulaire_don {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    min-width: 50%;
+}

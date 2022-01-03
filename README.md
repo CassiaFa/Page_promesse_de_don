@@ -44,4 +44,4 @@ Présentation de 2 minutes du site devant l'ensemble de la promo. Évaluation pa
 
 Un lien GitHub qui contient tout le projet web.
 
-## Structure du projet <a id="#StructureProjet"></a>
+## Structure du projet <a id="StructureProjet"></a>
