@@ -14,21 +14,21 @@
 
         <!-- Entête de la page web -->
         <header class="page-header">
-            <h1><a href="./index.html" id="titre">Hear Blow</a></h1>
+            <h1><a href="../index.html" id="titre">Hear Blow</a></h1>
 
             <!-- Bloc de navigation -->
             <nav>
                 <div>
                     <ul id="menu">
-                        <li class="menu_item"><a href="#" class="bouton_menu">L'Association</a></li>
-                        <li class="menu_item"><a href="#" class="bouton_menu">Nos Missions</a></li>
-                        <li class="menu_item"><a href="#" class="bouton_menu">Notre Actualité</a></li>
+                        <li class="menu_item"><a href="../index.html#association" class="bouton_menu">L'Association</a></li>
+                        <li class="menu_item"><a href="../index.html#missions" class="bouton_menu">Nos Missions</a></li>
+                        <li class="menu_item"><a href="../index.html#actualite" class="bouton_menu">Notre Actualité</a></li>
                         <li class="menu_item"><a href="#" class="bouton_menu">Nous Contacter</a></li>
                     </ul>
                 </div>
             </nav>
 
-            <a href="./pages/faire_don.html" class="bouton_menu bouton_don">
+            <a href="./faire_don.html" class="bouton_menu bouton_don">
                 Faire un don
             </a>
         </header>
@@ -50,9 +50,12 @@
                         <input type="email" name="mail" id="e-mail" placeholder="e-mail *" required>
                     </div>
                    <div id="commentaire" class="element_form">
-                       <textarea name="commentaire" id="commentaire" cols="18" rows="10" placeholder="Commentaire ..."></textarea>
+                       <textarea name="commentaire" id="commentaire"  placeholder="Commentaire ..."></textarea>
                    </div>
                     <p id="obligation">* Champs obligatoires (ces informations sont indispensables pour bénéficier de votre réduction fiscale)</p>
+                    <div id="envoyer" class="bloc_principal">
+                        <button type="submit" id="valider">Envoyer</button>
+                    </div>
                 </div>
             </form>
         </section>

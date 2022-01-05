@@ -81,3 +81,6 @@ header.page-header > h1 {
     min-width: 50%;
 }
 
+.article {
+    padding: 1em 2em;
+}

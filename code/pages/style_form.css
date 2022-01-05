@@ -181,7 +181,7 @@ input[type="radio"].paiment_mode#Chq:hover + label{
 }
 
 input[type="radio"].paiment_mode#Chq:checked + label{
-    background: no-repeat center/80% url(../public/cheque_selected.png);
+    background: no-repeat center/70% url(../public/cheque_selected.png);
     border-color: deeppink;
     color: white;
 }
@@ -218,4 +218,8 @@ p.name_paiement {
 
 label#id_CGU {
     font-size: 0.8em;
+}
+
+textarea {
+    width: 100%;
 }
