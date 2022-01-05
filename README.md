@@ -19,7 +19,7 @@ Votre client est une association caritative qui veut récolter des dons sur le w
 
 ### Modalités pédagogiques <a id="ModalitesP"></a>
 
-En solo, vous devez créer deux page web en utilisant PYTHON, HTML/CSS (BOOTSTRAP est autorisé) :
+En solo, vous devez créer deux page web en utilisant HTML/CSS (BOOTSTRAP est autorisé) :
 
 - Une page d'accueil qui présente l'association et la bonne cause à financer,
 - Un formulaire qui permet de faire une promesse de don (avec saisie du nom, prénom, adresse, mail, somme promise, une coche 'vous avez pris connaissance..',...).
@@ -28,7 +28,7 @@ La navigation entre les 2 pages doit être simple et intuitive. L'architecture d
 
 Pour le contenu, vous êtes libre de choisir l'association que vous souhaitez et de vous inspirez de son site officiel pour vos travaux. Vous pouvez faire un peu de veille concurentielle pour personnaliser vos pages.
 
-Une option peut être ajoutée : un formulaire de login sur la page récapitulative des dons. Demandez un login/mot de passe et si la personne est identifiée, en base, comment étant un responsable de l'association alors elle accède à la page récapitulative.
+Une option peut être ajoutée : un formulaire de login sur la page récapitulative des dons.
 
 C'est un travail individuel.
 

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hear Blow</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./style_form.css">
         <!-- Police d'écriture -->
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"> 
     </head>
@@ -22,7 +23,7 @@
                         <li class="menu_item"><a href="#" class="bouton_menu">L'Association</a></li>
                         <li class="menu_item"><a href="#" class="bouton_menu">Nos Missions</a></li>
                         <li class="menu_item"><a href="#" class="bouton_menu">Notre Actualité</a></li>
-                        <li class="menu_item"><a href="./pages/contact.html" class="bouton_menu">Nous Contacter</a></li>
+                        <li class="menu_item"><a href="#" class="bouton_menu">Nous Contacter</a></li>
                     </ul>
                 </div>
             </nav>
@@ -33,8 +34,27 @@
         </header>
 
         <!-- Bloc de section -->
-        <section>
-
+        <section class="contenu">
+            <form action="../index.html" method="post" class="formulaire_don" >
+                <div id="information_perso" class="bloc_principal">
+                    <div class="titre">
+                        <p class="titre">Nous contacter</p>
+                    </div>
+                    <div id="nom" class="element_form">
+                        <input type="text" placeholder="Nom*" required>
+                    </div>
+                    <div id="prenom" class="element_form">
+                        <input type="text" placeholder="Prenom*" required>
+                    </div>
+                    <div id="mail" class="element_form">
+                        <input type="email" name="mail" id="e-mail" placeholder="e-mail *" required>
+                    </div>
+                   <div id="commentaire" class="element_form">
+                       <textarea name="commentaire" id="commentaire" cols="18" rows="10" placeholder="Commentaire ..."></textarea>
+                   </div>
+                    <p id="obligation">* Champs obligatoires (ces informations sont indispensables pour bénéficier de votre réduction fiscale)</p>
+                </div>
+            </form>
         </section>
         
         <!-- Bloc de bas de page -->
