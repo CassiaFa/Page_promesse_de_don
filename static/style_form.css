@@ -1,0 +1,225 @@
+div.bloc_principal{
+    width: 50%;
+}
+
+div.titre {
+    width: 100%;
+    background-color: deeppink;
+    text-align: left;
+    border-radius: 5px;    
+}
+
+p.titre{
+    text-transform: uppercase;
+    color: white;
+    font: bold 1.2em Arial;
+    margin: 10px 10px;
+}
+
+div.element_form {
+    margin: 10px auto;
+}
+
+p#obligation {
+    font-size: 0.5em;
+}
+
+/* Bouton radio pour le montant du don */
+#montant_liste{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.montant_item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 15px;
+    /* float: left; */
+}
+
+input[type="radio"].bouton_don {
+    display: none;
+}
+
+input[type="radio"].bouton_don + label{
+    padding: 0.4em 0.9em;
+    font: bold 1em Arial;
+    line-height: 1.5;
+    border-radius: 0.3em;
+    color: black;
+    background-color: white;
+    border: 1px solid grey;
+    transition: all 0.5s ease-in-out;
+}
+
+input[type="radio"].bouton_don:hover + label{
+    background-color: deeppink;
+    border-color: deeppink;
+    color: white;
+}
+
+input[type="radio"].bouton_don:checked + label{
+    background-color: deeppink;
+    border-color: deeppink;
+    color: white;
+}
+
+#autre_montant {
+    margin: 20px auto;
+}
+
+#montant_p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.montant_personnalise {
+    top: 0;
+}
+
+#symbole_e {
+    /* background-color: gray; */
+    display: block;
+    /* height: 50px; */
+    /* line-height: 50px; */
+    width: 30px;
+    text-align: center;
+    color: #969696;
+    border-top-right-radius: var(--border-radius, 4px);
+    border-bottom-right-radius: var(--border-radius, 4px);
+    font-size: calc(var(--fontsize) + 3px);
+    background-color: #f0f0f0;
+    border: 1px solid #d1d1d1;
+}
+
+/*  */
+
+/* Moyen de paiement */
+
+#moyen_paiement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0 5px;
+}
+
+input[type="radio"].paiment_mode {
+    display: none;
+}
+
+input[type="radio"].paiment_mode + label{
+    padding: 0.7em 1.5em;
+    font: bold 1em Arial;
+    line-height: 1.5;
+    border-radius: 0.3em;
+    color: black;
+    border: 1px solid grey;
+    transition: all 0.5s ease-in-out;
+}
+
+input[type="radio"].paiment_mode:hover + label{
+    background-color: deeppink;
+    border-color: deeppink;
+    color: white;
+}
+
+input[type="radio"].paiment_mode:checked + label{
+    background-color: deeppink;
+    border-color: deeppink;
+    color: white;
+}
+
+input[type="radio"].paiment_mode#CB + label{
+    background: no-repeat center/80% url(./images/carte_credit.png);
+    border-color: deeppink;
+    color: white;
+}
+
+input[type="radio"].paiment_mode#CB:hover + label{
+    background: no-repeat center/80% url(./images/carte_credit_selected.png);
+    border-color: deeppink;
+    color: white;
+}
+
+input[type="radio"].paiment_mode#CB:checked + label{
+    background: no-repeat center/80% url(./images/carte_credit_selected.png);
+    border-color: deeppink;
+    color: white;
+}
+
+input[type="radio"].paiment_mode#PP + label{
+    background: no-repeat center/80% url(./images/paypal.png);
+    border-color: deeppink;
+    color: white;
+}
+
+input[type="radio"].paiment_mode#PP:hover:checked + label{
+    background: no-repeat center/80% url(./images/paypal_selected.png);
+    border-color: deeppink;
+    color: white;
+}
+
+input[type="radio"].paiment_mode#PP:checked + label{
+    background: no-repeat center/80% url(./images/paypal_selected.png);
+    border-color: deeppink;
+    color: white;
+}
+
+input[type="radio"].paiment_mode#Chq + label{
+    background: no-repeat center/70% url(./images/cheque.png);
+    border-color: deeppink;
+    color: white;
+}
+
+input[type="radio"].paiment_mode#Chq:hover + label{
+    background: no-repeat center/70% url(./images/cheque_selected.png);
+    border-color: deeppink;
+    color: white;
+}
+
+input[type="radio"].paiment_mode#Chq:checked + label{
+    background: no-repeat center/70% url(./images/cheque_selected.png);
+    border-color: deeppink;
+    color: white;
+}
+
+p.name_paiement {
+    text-align: center;
+    font: bold 0.8em Arial;
+    color: deeppink;
+}
+
+/*  */
+
+#envoyer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#valider {
+    width: 50%;
+    margin-bottom: 20px;
+    background-color: deeppink;
+    color: white;
+    border: 1px solid deeppink;
+    border-radius: 0.3em;
+    font: bold 1em Arial;
+    text-transform: uppercase;
+}
+
+#valider:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+label#id_CGU {
+    font-size: 0.8em;
+}
+
+textarea {
+    width: 100%;
+}

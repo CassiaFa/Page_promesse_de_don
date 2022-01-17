@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}Hear blow{% endblock %}
+
+{% block boutondon %}
+    <a href="{{ url_for('don') }}" class="bouton_menu bouton_don">
+        Faire un don
+    </a>        
+{% endblock %}
+{% block content %}             
+    <div class="contenu article" id="association">
+        <h2>L'Association</h2>
+        <hr>
+        <div class="float_r">
+            <img src="{{ url_for('static', filename='images/echouage.jpg') }}" alt="echouage de mammifères marin" >
+        </div>
+        <div>
+            <p>Hear Blow est une association fondé en 2005, et qui a pour objectif de diminuer les émissions sonores dans la mer.
+                Contrairement à la description faite par le commandant Cousteau, les mers et océans n'ont rien d'un <i>Monde de silence</i>.
+                Le traffic maritime, les essaies militaire, et les différentes activités nautiques motorisées ont fait de notre trésor bleu 
+                un environnement extrêmement bruyant. Ce qui a un impact direct sur les différentes espèces vivant dans cet environnement.
+                Depuis maintenant plusieurs année les échouages de mammifères marin se multiplient, certaines espèces utilise le son pour 
+                communiquer ou bien même se localiser.
+            </p>
+            </div>
+    </div>
+
+    <div class="contenu article" id="missions">
+        <h2>Nos missions</h2>
+        <hr>
+        <ul>
+            <li>Aider la recherche dans le développement de moteur moins bruyant</li>
+            <li>Aider les entreprises à diminuer leur impacts sonore</li>
+            <li>Faire prendre conscience à tout le monde de l'état sonore des océans</li>
+        </ul>
+    </div>
+
+    <div class="contenu article" id="actualite">
+        <h2>Notre actualité</h2>
+        <hr>
+        <h3>Février 2020</h3>
+        <div class="float_r">
+            <img src="{{ url_for('static', filename='images/group1.jpg') }}" alt="echouage de mammifères marin" >
+        </div>
+        <div>
+            <p>Le premier armement de pêche que nous avons aider, dans la mise en place de dispositif
+                visant à résuire l'impact sonore de leur activité de pêche. Après de longtemps de réflexion sur l'amélioration
+                du matériel, et son adaptabilité sur les navires de la société. Nous sommes heureux de 
+                voir se travail enfin porter ses fruit.
+            </p>
+        </div>
+        <hr style="clear:both">
+        <h3>Septembre 2019</h3>
+        <div class="float_l">
+            <img src="{{ url_for('static', filename='images/group2.jpg') }}" alt="echouage de mammifères marin" >
+        </div>
+        <div>
+            <p>Merci à collège Jean-Fourien qui nous gentillemet accueilli lord de cette journée de partage avec
+                les élèves de 5èmeB. Une bonne journée d'échange et d'animation qui nous l'espérons, a su séduire les 
+                enfant, et leurs permettre de mieux comprendre les enjeux actuels de notre planète, ainsi que les objectifs
+                de notre association.
+            </p>
+    </div>
+{% endblock %}
