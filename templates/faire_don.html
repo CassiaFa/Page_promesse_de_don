@@ -13,7 +13,7 @@
 
 {% block content %}
     <div class="contenu">
-        <form action="{{ url_for('index') }}" method="post" class="formulaire_don" >
+        <form action="{{ url_for('add') }}" method="post" class="formulaire_don" >
             <div id="information_perso" class="bloc_principal">
                 <div class="titre">
                     <p class="titre">Mes Coordonnées</p>
@@ -24,22 +24,22 @@
                         <option value="M.">M.</option>
                         <option value="Mme.">Mme.</option>
                     </select>
-                    <input type="text" placeholder="Nom*" required>
+                    <input type="text" name="nom" placeholder="Nom*" required>
                 </div>
                 <div id="prenom" class="element_form">
-                    <input type="text" placeholder="Prenom*" required>
+                    <input type="text" name="prenom" placeholder="Prenom*" required>
                 </div>
                 <div id="mail" class="element_form">
                     <input type="email" name="mail" id="e-mail" placeholder="e-mail *" required>
                 </div>
                 <div id="adresse" class="element_form">
                     <div class="element_form">
-                        <input type="text" placeholder="N° et nom de rue">
+                        <input type="text" name="adresse" placeholder="N° et nom de rue">
                     </div>
-                    <input type="text" placeholder="Complément d'adresse">
+                    <input type="text" name="compa" placeholder="Complément d'adresse">
                     <div id="code_ville" class="element_form">
-                        <input type="text" placeholder="Code postal*">
-                        <input type="text" placeholder="Ville*">
+                        <input type="text" name="CP" placeholder="Code postal*">
+                        <input type="text" name="ville" placeholder="Ville*">
                     </div>
                     <select name="pays">
                         <option value="France" selected="selected">France </option>
@@ -308,30 +308,30 @@
                 <div id="montant_propose">
                     <ul id="montant_liste">
                         <li id="don_10" class="montant_item">
-                            <input type="radio" name="radio_montant" class="bouton_don" id="bouton_don_10e" checked>
+                            <input type="radio" name="radio_montant" value="10" class="bouton_don" id="bouton_don_10e" checked>
                             <label for="bouton_don_10e">10 €</label>
                         </li>
                         <li id="don_20" class="montant_item">
-                            <input type="radio" name="radio_montant" class="bouton_don" id="bouton_don_20e">
+                            <input type="radio" name="radio_montant" value="20" class="bouton_don" id="bouton_don_20e">
                             <label for="bouton_don_20e">20 €</label>
                         </li>
                         <li id="don_50" class="montant_item">
-                            <input type="radio" name="radio_montant" class="bouton_don" id="bouton_don_50e">
+                            <input type="radio" name="radio_montant" value="50" class="bouton_don" id="bouton_don_50e">
                             <label for="bouton_don_50e">50 €</label>
                         </li>
                         <li id="don_100" class="montant_item">
-                            <input type="radio" name="radio_montant" class="bouton_don" id="bouton_don_100e">
+                            <input type="radio" name="radio_montant" value="100" class="bouton_don" id="bouton_don_100e">
                             <label for="bouton_don_100e">100 €</label>
                         </li>
                         <li id="don_200" class="montant_item">
-                            <input type="radio" name="radio_montant" class="bouton_don" id="bouton_don_200e">
+                            <input type="radio" name="radio_montant" value="200" class="bouton_don" id="bouton_don_200e">
                             <label for="bouton_don_200e">200 €</label>
                         </li>
                     </ul>
                 </div>
                 <div id="autre_montant" class="montant_personnalise">
                     <label id="montant_p">
-                        <input type="text" name="montant" id="montant_donateur" placeholder="Autre montant">
+                        <input type="text" name="radio_montant" id="montant_donateur" placeholder="Autre montant">
                         <span id="symbole_e" class="montant_personnalise">€</span>
                     </label>
                 </div>
@@ -342,17 +342,17 @@
                 </div>
                 <div id="moyen_paiement">
                     <div id="carte_bancaire">
-                        <input type="radio" name="paiement" id="CB" class="paiment_mode" checked>
+                        <input type="radio" name="paiement" value="Carte Bancaire" id="CB" class="paiment_mode" checked>
                         <label for="CB"></label>
                         <p class="name_paiement">CB</p>
                     </div>
                     <div id="paypal">
-                        <input type="radio" name="paiement" id="PP" class="paiment_mode">
+                        <input type="radio" name="paiement" value="PayPal" id="PP" class="paiment_mode">
                         <label for="PP"></label>
                         <p class="name_paiement">PayPal</p>
                     </div>
                     <div id="cheque">
-                        <input type="radio" name="paiement" id="Chq" class="paiment_mode">
+                        <input type="radio" name="paiement" value="Cheque" id="Chq" class="paiment_mode">
                         <label for="Chq"></label>
                         <p class="name_paiement">Chèque</p>
                     </div>
