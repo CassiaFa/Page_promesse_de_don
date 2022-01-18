@@ -1,3 +1,4 @@
+from asyncio.windows_events import NULL
 from flask import Flask, render_template, request
 import data
 
@@ -24,6 +25,18 @@ def add():
 
     adresse = request.values.get('adresse')
     comp_adresse = request.values.get('compa')
+    
+    # Vérification adresse et comp_adresse
+    if not adresse:
+        adresse = "DEFAULT" # si chaine de caractère vide attribution de None
+    else:
+        adresse = "'"+adresse+"'"
+    
+    if not comp_adresse:
+        comp_adresse = "DEFAULT" # si chaine de caractère vide attribution de None
+    else:
+        comp_adresse = "'"+comp_adresse+"'"
+    #--------------------------------------
 
     code_postal = request.values.get('CP')
     ville = request.values.get('ville')
@@ -31,6 +44,13 @@ def add():
     pays = request.values.get('pays')
 
     valeur_don = request.values.get('radio_montant')
+    autre_don = request.values.get('autre_montant')
+    
+    # Vérification si autre_montant rempli
+    if autre_don :
+        valeur_don = autre_don # remplacement de don par autre_montant
+    #-------------------------------------
+
     type_don = request.values.get('paiement')
 
     data.add_don(civilite, nom, prenom, mail, adresse, comp_adresse, code_postal, ville, pays, valeur_don, type_don)
