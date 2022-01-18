@@ -16,8 +16,11 @@
     <body>
         <!-- Entête de la page web -->
         <header class="page-header">
-            <h1><a href="{{ url_for('index') }}" id="titre">Hear Blow</a></h1>
+            <div id="connexion">
+                <a href="{{ url_for('user_connexion')}}" id="a_connexion"> Connection </a>
+            </div>
 
+            <h1><a href="{{ url_for('index') }}" id="titre">Hear Blow</a></h1>
             <!-- Bloc de navigation -->
             <nav>
                 <div>

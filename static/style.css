@@ -105,3 +105,20 @@ header.page-header > h1 {
 .float_l > img{
     height: 220px;
 }
+
+#connexion {
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    float: right;
+    margin-right: 0;
+    border: solid deeppink 2px;
+    border-radius: 10px;
+    background-color: deeppink;
+}
+
+#a_connexion {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

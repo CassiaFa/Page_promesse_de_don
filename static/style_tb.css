@@ -1,0 +1,19 @@
+#cagnote {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td {
+    background-color:  lightgray;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    width: 10%;
+  }
+
+.ctr {
+    text-align: center;
+}

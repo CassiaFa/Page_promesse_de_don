@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Hear Blow | Tableau de bord
+{% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_tb.css') }}"> 
+    <!-- Police d'écriture -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %} 
+
+{% block content %}
+    {% if droits == 'Administrateur' %}
+    <div class="contenu">
+        <div id="cagnote">
+            <p> La cagnote total de l'association est de : {{cagnote}} €</p>
+            <hr>
+        </div>
+        <table >
+            <tr>
+                <th>Nomination</th>
+                <th>Don</th>
+                <th>Moyen de paiement</th>
+            </tr>
+            {% for don in dons %}
+                <tr>
+                    <td><a href="#">{{ don['genre'] + " " + don['nom'] + " " + don['prenom'] }}</a></td>
+                    <td class="ctr">{{ don['valeur'] }}</td>
+                    <td class="ctr">{{ don['reglement'] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+    {% else %}
+
+    {% endif %}
+{% endblock%}  

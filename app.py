@@ -1,4 +1,3 @@
-from asyncio.windows_events import NULL
 from flask import Flask, render_template, request
 import data
 
@@ -15,6 +14,14 @@ def don():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/resume', methods=['POST'])
+def resume():
+    dons, cagnote = data.lire_dons()
+    login = request.values.get('login')
+    mdp = request.values.get('mdp')
+    droits = data.check_user(login, mdp)
+    return render_template('resume.html', dons = dons, cagnote = cagnote, droits = droits)
 
 @app.route('/add', methods=['POST'])
 def add():
@@ -56,6 +63,10 @@ def add():
     data.add_don(civilite, nom, prenom, mail, adresse, comp_adresse, code_postal, ville, pays, valeur_don, type_don)
 
     return render_template('index.html')
+
+@app.route('/user_connexion')
+def user_connexion():
+    return render_template('connection.html')
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
