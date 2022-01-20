@@ -133,55 +133,55 @@ input[type="radio"].paiment_mode:checked + label{
 }
 
 input[type="radio"].paiment_mode#CB + label{
-    background: no-repeat center/80% url(../public/carte_credit.png);
+    background: no-repeat center/80% url(./images/carte_credit.png);
     border-color: deeppink;
     color: white;
 }
 
 input[type="radio"].paiment_mode#CB:hover + label{
-    background: no-repeat center/80% url(../public/carte_credit_selected.png);
+    background: no-repeat center/80% url(./images/carte_credit_selected.png);
     border-color: deeppink;
     color: white;
 }
 
 input[type="radio"].paiment_mode#CB:checked + label{
-    background: no-repeat center/80% url(../public/carte_credit_selected.png);
+    background: no-repeat center/80% url(./images/carte_credit_selected.png);
     border-color: deeppink;
     color: white;
 }
 
 input[type="radio"].paiment_mode#PP + label{
-    background: no-repeat center/80% url(../public/paypal.png);
+    background: no-repeat center/80% url(./images/paypal.png);
     border-color: deeppink;
     color: white;
 }
 
 input[type="radio"].paiment_mode#PP:hover:checked + label{
-    background: no-repeat center/80% url(../public/paypal_selected.png);
+    background: no-repeat center/80% url(./images/paypal_selected.png);
     border-color: deeppink;
     color: white;
 }
 
 input[type="radio"].paiment_mode#PP:checked + label{
-    background: no-repeat center/80% url(../public/paypal_selected.png);
+    background: no-repeat center/80% url(./images/paypal_selected.png);
     border-color: deeppink;
     color: white;
 }
 
 input[type="radio"].paiment_mode#Chq + label{
-    background: no-repeat center/70% url(../public/cheque.png);
+    background: no-repeat center/70% url(./images/cheque.png);
     border-color: deeppink;
     color: white;
 }
 
 input[type="radio"].paiment_mode#Chq:hover + label{
-    background: no-repeat center/70% url(../public/cheque_selected.png);
+    background: no-repeat center/70% url(./images/cheque_selected.png);
     border-color: deeppink;
     color: white;
 }
 
 input[type="radio"].paiment_mode#Chq:checked + label{
-    background: no-repeat center/70% url(../public/cheque_selected.png);
+    background: no-repeat center/70% url(./images/cheque_selected.png);
     border-color: deeppink;
     color: white;
 }
@@ -222,4 +222,24 @@ label#id_CGU {
 
 textarea {
     width: 100%;
+}
+
+/* Masquer les flèches des input number */
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+ 
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+ 
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button { 
+	-o-appearance: none;
+	margin:0
 }

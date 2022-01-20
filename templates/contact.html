@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Hear Blow | Contact
+{% endblock %}
+
+{% block links %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_form.css') }}"> 
+    <!-- Police d'écriture -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"> 
+{% endblock %}  
+
+{% block boutondon %}
+    <a href="{{ url_for('don') }}" class="bouton_menu bouton_don">
+        Faire un don
+    </a>        
+{% endblock %}
+
+{% block content %}
+    <div class="contenu">
+        <form action="../index.html" method="post" class="formulaire_don" >
+            <div id="information_perso" class="bloc_principal">
+                <div class="titre">
+                    <p class="titre">Nous contacter</p>
+                </div>
+                <div id="nom" class="element_form">
+                    <input type="text" placeholder="Nom*" required>
+                </div>
+                <div id="prenom" class="element_form">
+                    <input type="text" placeholder="Prenom*" required>
+                </div>
+                <div id="mail" class="element_form">
+                    <input type="email" name="mail" id="e-mail" placeholder="e-mail *" required>
+                </div>
+            <div id="commentaire" class="element_form">
+                <textarea name="commentaire" id="commentaire"  placeholder="Commentaire ..."></textarea>
+            </div>
+                <p id="obligation">* Champs obligatoires (ces informations sont indispensables pour bénéficier de votre réduction fiscale)</p>
+                <div id="envoyer" class="bloc_principal">
+                    <button type="submit" id="valider">Envoyer</button>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
