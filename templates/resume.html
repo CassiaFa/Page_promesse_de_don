@@ -13,28 +13,35 @@
 
 {% block content %}
     {% if droits == 'Administrateur' %}
-    <div class="contenu">
-        <div id="cagnote">
-            <p> La cagnote total de l'association est de : {{cagnote}} €</p>
-            <hr>
-        </div>
-        <table >
-            <tr>
-                <th>Nomination</th>
-                <th>Don</th>
-                <th>Moyen de paiement</th>
-            </tr>
-            {% for don in dons %}
+        <div class="contenu">
+            <div id="cagnote">
+                <p> La cagnote total de l'association est de : {{cagnote}} €</p>
+                <hr>
+            </div>
+            <table >
                 <tr>
-                    <td><a href="#">{{ don['genre'] + " " + don['nom'] + " " + don['prenom'] }}</a></td>
-                    <td class="ctr">{{ don['valeur'] }}</td>
-                    <td class="ctr">{{ don['reglement'] }}</td>
+                    <th>Nomination</th>
+                    <th>Don</th>
+                    <th>Moyen de paiement</th>
                 </tr>
-            {% endfor %}
-        </table>
+                {% for don in dons %}
+                    <tr>
+                        <td><a href="#">{{ don['date'] }}</a></td>
+                        <td><a href="#">{{ don['genre'] + " " + don['nom'] + " " + don['prenom'] }}</a></td>
+                        <td class="ctr">{{ don['valeur'] }}</td>
+                        <td class="ctr">{{ don['reglement'] }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
 
-    </div>
+        </div>
+    {% elif droits == None%}
+        <div class="contenu">
+            <p id="acces_refuse">Le nom d'utilisateur ou le mot de passe est erroné !</p>
+        </div>
     {% else %}
-
+        <div class="contenu">
+            <p id="acces_refuse">Vous n'êtes pas autorisé à accéder au tableau de bord !</p>
+        </div>
     {% endif %}
 {% endblock%}  

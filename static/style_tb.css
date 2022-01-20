@@ -1,8 +1,15 @@
+.contenu {
+    padding-bottom: 20px;
+}
+
 #cagnote {
     text-align: center;
+    font-weight: bold;
+    font-size: larger;
 }
 
 table {
+    width: 90%;
     border-collapse: collapse;
     margin: auto;
 }

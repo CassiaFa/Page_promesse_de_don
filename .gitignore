@@ -130,3 +130,7 @@ dmypy.json
 
 # Dossier
 /idees
+
+# Fichiers
+date.sql
+promesse_don.sql
